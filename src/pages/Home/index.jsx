@@ -1,6 +1,8 @@
+// import '../styles/home/_home.scss'
+
 function Home() {
     return (
-        <div>
+        <div className='home-title'>
             Page d'accueil
         </div>
     )
