@@ -2,8 +2,7 @@
 
 function Home() {
     return (
-        <div className='home-title'>
-            Page d'accueil
+        <div className='home-main'>
         </div>
     )
 }
