@@ -5,3 +5,22 @@
     width: 1240px;
     height: 1095px;
 }
+.home-title {
+    position: absolute;
+    left: 100px;
+    width: 1240px;
+    height: 223px;    
+}
+.home-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1240px;
+    height: 223px;
+    object-fit: contain;     
+}
+.home-p {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 500;
+}
