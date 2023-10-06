@@ -5,27 +5,18 @@
     width: 1240px;
     height: 1095px;
 }
-.home-title {
-    position: absolute;
-    height: 223px;
-    // left: 100px;
-    
-}
 .home-image {
-    position: relative;
-    top: 0;
-    left: 0;
+    height: 223px;
     width: 1240px;
-    height: 112px;
     object-fit: contain;     
 }
 .home-p {
     position: relative;
-    top: 0;
-    width: 1240px;
-    height: 112px;
+    top: -200px;
     text-align: center;
     font-family: Montserrat;
     font-size: 48px;
     font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+
 }
