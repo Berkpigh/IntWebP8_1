@@ -20,3 +20,10 @@
     color: rgba(255, 255, 255, 1);
 
 }
+.home-loclist {
+    list-style-type: none;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
