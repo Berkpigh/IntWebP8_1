@@ -1,6 +1,6 @@
 .home-main {
     position: relative;
-    top: 163px;
+    top: 118px;
     left: 100px;
     width: 1240px;
     height: 1095px;
@@ -20,10 +20,18 @@
     color: rgba(255, 255, 255, 1);
 
 }
-.home-loclist {
+.home-loc {
+    position: relative;
+    top: -100px;
+    height: 829px;
+    &__list {
     list-style-type: none;
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    }
+}
+ul {
+    margin-inline-end: 0;
+    padding-inline-start: 0;
 }

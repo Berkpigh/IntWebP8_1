@@ -9,14 +9,16 @@ function Home() {
         <div className='home-main'>
             <img src={homeimg} alt="home" className="home-image" />
             <p className="home-p">Chez vous, partout et ailleurs</p>
+            <div className='div-loc'>
+                <ul className='home-loc__list'>
+                    {locationList.map(({id, title}) =>
+                        (<div key={id}>
+                            <LocationItem title={title} />
+                        </div>
+                    ))}
+                </ul>
+            </div>
         </div>
-        <ul className='home-loclist'>
-            {locationList.map(({id, title}) =>
-                (<div key={id}>
-                    <LocationItem title ={title} />
-                </div>
-            ))}
-        </ul>
         </React.Fragment>
     )
 }
