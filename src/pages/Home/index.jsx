@@ -9,12 +9,12 @@ function Home() {
         <div className='home-main'>
             <img src={homeimg} alt="home" className="home-image" />
             <p className="home-p">Chez vous, partout et ailleurs</p>
-            <div className='div-loc'>
-                <ul className='home-loc__list'>
+            <div className='gale'>
+                <ul className='gale-ul'>
                     {locationList.map(({id, title}) =>
-                        (<div key={id}>
-                            <LocationItem title={title} />
-                        </div>
+                        (<li key={id} className='gale-ul__li'>
+                            <p className='gale-ul__li-p'>{title}</p>
+                        </li>
                     ))}
                 </ul>
             </div>
@@ -23,3 +23,8 @@ function Home() {
     )
 }
 export default Home
+/* {locationList.map(({id, title}) =>
+(<div key={id}>
+    <LocationItem title={title} />
+</div>
+))} */
