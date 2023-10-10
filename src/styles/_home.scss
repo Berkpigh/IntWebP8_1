@@ -23,8 +23,10 @@
 .gale {
     position: relative;
     top: -120px;
-    left: 40px;
+    left: 0px;
     height: 829px;
+    display: flex;
+    justify-content: space-between;
     &-ul {
         width: 1240px;
         height: 829px;
@@ -45,7 +47,8 @@
                 font-family: Montserrat;
                 font-weight: 500;
                 font-size: 18px;
-                color: rgba(255, 255, 255, 1);
+                color: white;
+                //color: rgba(255, 255, 255, 1);
             }
         }
     }
