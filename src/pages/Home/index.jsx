@@ -1,9 +1,15 @@
 import React from 'react';
+import {useState} from 'react'
 import locationList from '../../data/vingtannonces.json'
 import homeimg from '../../assets/home.png'
 import LocationItem from '../../components/LocationItem'
 
+
 function Home() {
+/*     const [filtL, setfiltL] = useState()
+    const filtR = locationList.filter(locL => locL.title.includes('Studio'))
+    console.log(filtR.length)
+    setfiltL(filtR) */
     return (
         <React.Fragment>
         <div className='home-main'>
@@ -11,7 +17,7 @@ function Home() {
             <p className="home-p">Chez vous, partout et ailleurs</p>
             <div className='gale'>
                 <ul  className='gale-ul'>
-                {locationList.filter(locL => locL.rating = '2').map(
+                {locationList.filter((locL, index) => index < 6).map(
                     ({id,title}) =>
                     (<div key= {id}>
                         <LocationItem title={title} />

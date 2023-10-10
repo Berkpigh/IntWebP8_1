@@ -23,6 +23,7 @@
 .gale {
     position: relative;
     top: -120px;
+    left: 40px;
     height: 829px;
     &-ul {
         width: 1240px;
@@ -34,7 +35,7 @@
             width: 340px;
             height: 340px;
             margin: 22px;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+            background: linear-gradient(180deg, rgba(255, 96, 96, 0) 0%, rgba(255, 96, 96, 0.5) 100%);
             &-p {
                 position: relative;
                 top: 268px;
