@@ -1,0 +1,22 @@
+.collaps {
+    position: relative;
+    top: 130px;
+    width: 1023px;
+    height: 829px;
+    left: 200px;;
+    background: rgba(246, 246, 246, 1);
+    margin-bottom: 15px;
+    &-frame {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(255, 96, 96, 1);
+
+        &__p {
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}
