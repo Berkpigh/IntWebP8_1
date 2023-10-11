@@ -1,7 +1,7 @@
 function LocationItem({title}) {
     return (
-        <li className="gale-ul__li" >
-            <p className="gale-ul__li-p">{title}</p>
+        <li className="card-ul__li" >
+            <p className="card-ul__li-p">{title}</p>
         </li>
     )
 }

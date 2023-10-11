@@ -1,0 +1,21 @@
+.banner {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 1240px;
+    height: 223px;
+    &-image {
+        height: 223px;
+        width: 1240px;
+        object-fit: contain;     
+    }
+    &-p {
+        position: relative;
+        top: -200px;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+    }
+}
