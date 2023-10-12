@@ -2,10 +2,10 @@ import React from 'react'
 import { useState } from 'react'
 
 function Collapse({ collnum, title, texto }) {
-  const [isOpen0, openClose0] = useState(false)
-  const [isOpen1, openClose1] = useState(true)
-  const [isOpen2, openClose2] = useState(false)
-  const [isOpen3, openClose3] = useState(true)
+  const [isOpen0, setOP0] = useState(false)
+  const [isOpen1, setOP1] = useState(false)
+  const [isOpen2, setOP2] = useState(false)
+  const [isOpen3, setOP3] = useState(false)
   var ostat = false
   var cn = { collnum }.collnum
   switch (cn) {
@@ -21,10 +21,38 @@ function Collapse({ collnum, title, texto }) {
     case 3:
       ostat = isOpen3
   }
-  console.log(cn, ostat)
+  function oP0() {
+    ostat ? setOP0(false) : setOP0(true)
+  }
+  function oP1() {
+    ostat ? setOP1(false) : setOP1(true)
+  }
+  function oP2() {
+    ostat ? setOP2(false) : setOP2(true)
+  }
+  function oP3() {
+    ostat ? setOP3(false) : setOP3(true)
+  }
+  function openClose(cn) {
+    switch (cn) {
+      case 0:
+        oP0()
+        break
+      case 1:
+        oP1()
+        break
+      case 2:
+        oP2()
+        break
+      default:
+        oP3()
+    }
+    ostat = !ostat
+  }
+  // console.log(cn, ostat)
   return ostat ? (
     <div className="collaps">
-      <div className="collaps-frame2">
+      <div className="collaps-frame2" onClick={() => openClose(cn)}>
         <p className="collaps-frame2__p">{texto}</p>
       </div>
     </div>
@@ -34,6 +62,7 @@ function Collapse({ collnum, title, texto }) {
         <p className="collaps-rect__p">{title}</p>
         <svg
           className="collaps-rect__svg"
+          onClick={() => openClose(cn)}
           width="33"
           height="32"
           viewBox="0 0 33 32"
