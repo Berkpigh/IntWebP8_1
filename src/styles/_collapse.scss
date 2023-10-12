@@ -27,4 +27,18 @@
             left: 966px;
         }
     }
+    &-frame2 {
+        position: absolute;
+        width: 3585px;
+        height: 26px;
+        background: rgba(255, 96, 96, 1);
+        border-radius: 10px 10px 5px 5px;
+        &__p {
+            position: relative;
+            top: -15px;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
 }

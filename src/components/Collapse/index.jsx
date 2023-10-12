@@ -5,15 +5,15 @@ function Collapse({ collnum, title, texto }) {
   const [isOpen0, openClose0] = useState(false)
   const [isOpen1, openClose1] = useState(true)
   const [isOpen2, openClose2] = useState(false)
-  const [isOpen3, openClose3] = useState(false)
+  const [isOpen3, openClose3] = useState(true)
   var ostat = false
-  var coll = { collnum }
-  switch (coll.collnum) {
+  var cn = { collnum }.collnum
+  switch (cn) {
     case 0:
       ostat = isOpen0
       break
     case 1:
-      ostat = true
+      ostat = isOpen1
       break
     case 2:
       ostat = isOpen2
@@ -21,11 +21,11 @@ function Collapse({ collnum, title, texto }) {
     case 3:
       ostat = isOpen3
   }
-  console.log(coll.collnum, ostat)
+  console.log(cn, ostat)
   return ostat ? (
     <div className="collaps">
-      <div className="collaps-rect">
-        <p className="collaps-rect__p">{texto}</p>
+      <div className="collaps-frame2">
+        <p className="collaps-frame2__p">{texto}</p>
       </div>
     </div>
   ) : (
