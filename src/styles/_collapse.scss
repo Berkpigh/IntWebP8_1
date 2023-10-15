@@ -29,16 +29,16 @@
         }
     }
     &-frame2 {
-        position: absolute;
+        //position: absolute;
         //width: 1023px;
-        height: 26px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 52px;
         text-wrap: wrap;
         background: rgba(255, 96, 96, 1);
         border-radius: 10px 10px 5px 5px;
         &__p1 {
-            position: relative;
-            top: -23px;
-            left: 10px;
             width: 956px;
             font-family: Montserrat;
             font-size: 24px;
@@ -46,22 +46,25 @@
             color: rgba(255, 255, 255, 1);
         }
         &__svg {
-            position: relative;
-            top: -85px;
-            left: 966px;
             width: 30px;
             &:hover {
                 transform: rotate(180deg);
             }
         }
         &__p2 {
-            position: relative;
-            top: -104px;
+            //position: relative;
+            //top: -104px;
             left: 20px;
             width: 1100px;
             font-family: Montserrat;
             font-size: 18px;
             font-weight: 400;
+        }
+        &__show {
+            display: block;
+        }
+        &__hide {
+            display: none;
         }
     }
 }
